@@ -8,14 +8,14 @@ namespace Vehiculos{
         std::string nombre;
         int velocidad;
 
-        private:
-        explicit Auto(const std::string nombre);
+        public:
+        explicit Auto(const std::string& nombre);
 
         void Arrancar();
         void Arrancar(int potencia);
         void Parar();
 
-        std::getNombre() const int;
+        std::string getNombre() const;
         int getVelocidad() const;
-    }
+    };
 }

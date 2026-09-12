@@ -1,9 +1,10 @@
-#include <auto.h>
+#include "auto.h"
 #include <iostream>
 
 namespace Vehiculos{
-    Auto::Auto (const std:: string& nombre)
-    :nombre(nombre), velocidad(0){}
+
+    Auto::Auto(const std::string& nombre)
+    : nombre(nombre), velocidad(0){}
 
     void Auto::Arrancar(){
      velocidad = 20;
@@ -22,6 +23,6 @@ namespace Vehiculos{
          std::cout << "auto " << nombre <<"paro\n";
     }
 
-    std::string getNombre() const {return nombre;}
-    int getVelocidad() const {return velocidad;}
+    std::string Auto::getNombre() const {return nombre;}
+    int Auto::getVelocidad() const {return velocidad;}
 }

@@ -10,14 +10,14 @@ namespace Control{
         private:
         EstadoSemaforo estados[3];
         EstadoSemaforo* actual;
-        std::verctor<Persona*> personas;
+        std::vector<Persona*> personas;
 
         void notificarPersona();
 
         public:
         Semaforo();
 
-        void agregarConductor(Persona* c);
+        void agregarConductor(Persona* p);
         void cambiarEstado();
         EstadoSemaforo getColorActual() const;
     };
